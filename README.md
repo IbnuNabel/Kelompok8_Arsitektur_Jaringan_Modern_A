@@ -26,15 +26,18 @@ Pastikan sistem Anda telah terinstal:
 Buka terminal baru dan jalankan controller yang diinginkan (contoh Multipath):
 ```bash
 osken-manager controllers/multipath_spf.py
+```
 
 ### 3. Menjalankan Topologi
 Buka terminal lain dan jalankan skrip topologi:
 * Untuk Topologi Diamond:
 ```bash
 sudo python3 topologies/topo-diamond_lab.py
-
+```
+```bash
 * Untuk Topologi Partial Mesh:
 sudo python3 topologies/topo-partial_mesh_lab.py
+```
 
 ### 4. Pengukuran Data
 Gunakan iperf atau ping untuk mengumpulkan metrik throughput dan latensi. Metrik evaluasi utama mencakup:  
