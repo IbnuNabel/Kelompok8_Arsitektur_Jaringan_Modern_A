@@ -34,8 +34,8 @@ Buka terminal lain dan jalankan skrip topologi:
 ```bash
 sudo python3 topologies/topo-diamond_lab.py
 ```
-```bash
 * Untuk Topologi Partial Mesh:
+```bash
 sudo python3 topologies/topo-partial_mesh_lab.py
 ```
 
@@ -45,5 +45,5 @@ Gunakan iperf atau ping untuk mengumpulkan metrik throughput dan latensi. Metrik
 * Latensi: End-to-End Delay.
 * Keseimbangan Beban: Distribusi trafik pada jalur alternatif.
 
-📚 Referensi
+## 📚 Referensi
 Repositori Dasar: github.com/abazh/learn_sdn.
