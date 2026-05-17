@@ -93,3 +93,8 @@ def run():
 if __name__ == "__main__":
     setLogLevel("info")
     run()
+
+# Tambahkan dictionary 'topos' ini agar command `mn --custom ... --topo diamond` berfungsi
+topos = {
+    'diamond': (lambda: DiamondTopo())
+}

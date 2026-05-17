@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mininet:
+    # Menggunakan image Mininet yang sudah terkonfigurasi (ringan dan populer)
+    image: iwaseyusuke/mininet:latest
+    container_name: mininet-emulator
+    # Privileged sangat penting agar Mininet bisa membuat virtual interface & network namespace
+    privileged: true
+    # Mount folder topologies dari komputer kamu ke dalam container
+    volumes:
+      - /lib/modules:/lib/modules:ro
+      - ./topologies:/topologies
+    # Mencegah container langsung exit
+    tty: true
+    stdin_open: true

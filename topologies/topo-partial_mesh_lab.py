@@ -99,3 +99,8 @@ def run():
 if __name__ == "__main__":
     setLogLevel("info")
     run()
+
+# Tambahkan dictionary 'topos' ini agar command `mn --custom ... --topo partial_mesh` berfungsi
+topos = {
+    'partial_mesh': (lambda: PartialMeshTopo())
+}
